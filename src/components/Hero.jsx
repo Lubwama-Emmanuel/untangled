@@ -14,7 +14,7 @@ export default function Hero() {
         </div>
         <div className="sm:grid sm:grid-rows-[700px_1fr]">
           <div className="mb-14 text-right sm:flex sm:h-[600px] sm:items-center sm:justify-center sm:text-left">
-            <h2 className=" text-5xl font-light leading-[1.9] sm:ml-32 sm:w-[60%] sm:text-7xl sm:leading-[1.2]">
+            <h2 className=" text-5xl font-light leading-[1.9] sm:ml-32 sm:w-[50%] sm:text-7xl sm:leading-[1.2]">
               Untangling the transition from{" "}
               <span className="font-medium">student</span> to{" "}
               <span className="font-medium text-red-600 underline">adult</span>
@@ -30,7 +30,7 @@ export default function Hero() {
               style={{
                 backgroundImage: `url(images/chart.png)`,
               }}
-              className=" bg-large-screen hidden h-[700px] bg-cover bg-no-repeat sm:block"
+              className=" bg-large-screen hidden bg-cover bg-no-repeat sm:block sm:h-[900px]"
             >
               {/* <img
                 src="images/chart.png"
