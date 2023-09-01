@@ -10,14 +10,14 @@ export default function Hero() {
           <img src="images/vector-2.png" alt="vector" className="" />
         </div>
         <div className="grid grid-rows-[700px_1fr]">
-          <div className="flex h-[600px] items-center justify-center ">
+          <div className="flex h-[600px] items-center justify-center">
             <h2 className="ml-32 w-[50%] text-7xl font-light leading-[1.2]">
               Untangling the transition from{" "}
               <span className="font-medium">student</span> to{" "}
               <span className="font-medium text-red-600 underline">adult</span>
             </h2>
           </div>
-          <div className="mx-auto mb-16 max-w-[80%]">
+          <div className="mx-auto mb-16 w-[83%]">
             <Heading
               number={1}
               title={"Get these things right in your 20's and life goes well"}
