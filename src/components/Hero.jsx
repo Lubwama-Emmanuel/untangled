@@ -27,7 +27,7 @@ export default function Hero() {
               style={{
                 backgroundImage: `url(images/chart.png)`,
               }}
-              className="h-[590px] bg-cover"
+              className="h-[620px] bg-cover"
             >
               {/* <img
                 src="images/chart.png"
