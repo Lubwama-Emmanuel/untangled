@@ -4,12 +4,12 @@ import Separator from "../ui/Separator";
 export default function Contact() {
   return (
     <AppSection>
-      <div className="mx-auto mb-10 max-w-[80%] space-y-8 text-center">
-        <h2 className="text-center text-6xl leading-[1.2]">
+      <div className="mx-auto mb-10 space-y-8 text-center sm:max-w-[80%]">
+        <h2 className="text-center text-3xl leading-[1.2] sm:text-6xl">
           How would you like us to be in touch with you?
         </h2>
         <div className="flex items-center justify-center">
-          <form className="flex w-[50%] flex-col space-y-4">
+          <form className="flex flex-col space-y-4 sm:w-[50%]">
             <input
               type="text"
               placeholder="Name"

@@ -6,10 +6,13 @@ import Separator from "../ui/Separator";
 export default function About() {
   return (
     <AppSection>
-      <div className="mx-auto max-w-[80%]">
+      <div className="mx-auto max-w-[100%] sm:max-w-[80%]">
+        <div className="my-8 sm:hidden">
+          <img src="images/vector-top.png" alt="separator" className="" />
+        </div>
         <Heading number={3} title={"About Dr.Mitch"} />
         <div className="mb-10 grid grid-cols-2 items-center">
-          <div className="space-y-16 px-2 ">
+          <div className="flex flex-col items-center space-y-10 px-2 sm:block sm:space-y-16">
             <Aspect aspect={"investor"} />
             <Aspect aspect={"Psychologist"} />
             <Aspect aspect={"social scientist"} />
@@ -20,15 +23,18 @@ export default function About() {
             <img
               src="images/Mitch.jpg"
               alt="Dr.Mitch"
-              className="h-[400px] rounded-lg"
+              className="rounded-lg sm:h-[400px]"
             />
           </div>
         </div>
         <div className="mb-16 flex justify-center">
-          <h3 className="w-[30%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline">
+          <h3 className="w-[70%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline sm:w-[30%]">
             <NavLink to="/about_mitch">Learn more about Dr. Mitch</NavLink>
           </h3>
         </div>
+      </div>
+      <div className="my-8 sm:hidden">
+        <img src="images/vector-top.png" alt="separator" className="" />
       </div>
       <Separator />
     </AppSection>
@@ -38,7 +44,7 @@ export default function About() {
 function Aspect({ aspect }) {
   return (
     <div className="flex items-center justify-between gap-2">
-      <div className="h-[2px] w-auto flex-grow bg-[#000]"></div>
+      <div className="hidden h-[2px] w-auto flex-grow bg-[#000] sm:block"></div>
       <h3 className="capitalize">{aspect}</h3>
     </div>
   );

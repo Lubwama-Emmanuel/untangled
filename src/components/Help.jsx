@@ -4,11 +4,11 @@ import Heading from "../ui/Heading";
 export default function Help() {
   return (
     <AppSection>
-      <div className="mx-auto mb-16 max-w-[80%]">
+      <div className="mx-auto mb-16 sm:max-w-[80%]">
         <Heading number={4} title={"How you can help?"} />
-        <div className="grid grid-cols-2">
+        <div className="grid-row-[auto_auto] grid space-y-5 sm:grid-cols-2">
           <h3>What's the best way for you to make an impact?</h3>
-          <ul className="list-disc space-y-2 font-medium">
+          <ul className="list-disc space-y-2 px-5 font-medium">
             <li>take a 10-minute survey and debrief your answers by zoom</li>
             <li>
               get on a zoom call with 8-10 peers and design something cool
