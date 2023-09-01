@@ -1,5 +1,4 @@
 import AppSection from "../ui/AppSection";
-import Heading from "../ui/Heading";
 import Separator from "../ui/Separator";
 
 export default function Hero() {
