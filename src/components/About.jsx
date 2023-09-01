@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import AppSection from "../ui/AppSection";
 import Heading from "../ui/Heading";
 import Separator from "../ui/Separator";
@@ -25,7 +26,7 @@ export default function About() {
         </div>
         <div className="mb-16 flex justify-center">
           <h3 className="w-[30%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline">
-            <a href="#sect">Learn more about Dr. Mitch</a>
+            <NavLink to="/about_mitch">Learn more about Dr. Mitch</NavLink>
           </h3>
         </div>
       </div>

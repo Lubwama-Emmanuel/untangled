@@ -7,7 +7,7 @@ const links = [
   {
     id: 2,
     item: "What we offer",
-    link: "#services",
+    link: "#what_we_offer",
   },
   {
     id: 3,

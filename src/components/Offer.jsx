@@ -5,7 +5,7 @@ import Separator from "../ui/Separator";
 export default function Offer() {
   return (
     <AppSection>
-      <div className="grid grid-cols-[7fr_1fr]">
+      <div className="grid grid-cols-[7fr_1fr]" id="#what_we_offer">
         <div className="mx-auto max-w-[80%] ">
           <Heading number={2} title={"What we offer?"} />
           <div className="space-y-2 text-center text-xl">
