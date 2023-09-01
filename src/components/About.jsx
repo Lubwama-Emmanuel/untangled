@@ -8,13 +8,13 @@ export default function About() {
     <AppSection>
       <div className="mx-auto max-w-[80%]">
         <Heading number={3} title={"About Dr.Mitch"} />
-        <div className="mb-10 grid grid-cols-2">
-          <div className="space-y-16 px-2">
+        <div className="mb-10 grid grid-cols-2 items-center">
+          <div className="space-y-16 px-2 ">
             <Aspect aspect={"investor"} />
             <Aspect aspect={"Psychologist"} />
             <Aspect aspect={"social scientist"} />
             <Aspect aspect={"serial entrepreneur"} />
-            <Aspect aspect={"management consultant"} />
+            {/* <Aspect aspect={"management consultant"} /> */}
           </div>
           <div className="flex justify-center">
             <img
