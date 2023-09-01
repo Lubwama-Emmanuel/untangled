@@ -1,12 +1,14 @@
-import { NavLink } from "react-router-dom";
-import AppSection from "../ui/AppSection";
+import { Link } from "react-router-dom";
 import Heading from "../ui/Heading";
-import Separator from "../ui/Separator";
+
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
 
 export default function About() {
   return (
-    <AppSection>
-      <div className="mx-auto max-w-[100%] sm:max-w-[80%]">
+    <section id="about" className="m-auto max-w-[90%]">
+      <div className="mx-auto max-w-[100%] sm:max-w-[90%]">
         <div className="my-8 sm:hidden">
           <img src="images/vector-top.png" alt="separator" className="" />
         </div>
@@ -28,16 +30,18 @@ export default function About() {
           </div>
         </div>
         <div className="mb-16 flex justify-center">
-          <h3 className="w-[70%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline sm:w-[30%]">
-            <NavLink to="/about_mitch">Learn more about Dr. Mitch</NavLink>
-          </h3>
+          <button
+            onClick={scrollToTop}
+            className="w-[70%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline sm:w-[30%]"
+          >
+            <Link to="/about_mitch">Learn more about Dr. Mitch</Link>
+          </button>
         </div>
       </div>
       <div className="my-8 sm:hidden">
         <img src="images/vector-top.png" alt="separator" className="" />
       </div>
-      <Separator />
-    </AppSection>
+    </section>
   );
 }
 

@@ -1,12 +1,11 @@
-import AppSection from "../ui/AppSection";
 import Heading from "../ui/Heading";
 import Separator from "../ui/Separator";
 
 export default function Offer() {
   return (
-    <AppSection>
+    <section id="offers" className="m-auto max-w-[90%]">
       <div className="grid grid-cols-[7fr_1fr]" id="#what_we_offer">
-        <div className="mx-auto max-w-[100%] sm:max-w-[80%]">
+        <div className="mx-auto max-w-[100%] sm:max-w-[90%]">
           <Heading number={2} title={"What we offer?"} />
           <div className="space-y-2 text-center text-xl">
             <p>
@@ -48,7 +47,7 @@ export default function Offer() {
       </div>
 
       <Separator />
-    </AppSection>
+    </section>
   );
 }
 

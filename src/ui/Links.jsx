@@ -7,7 +7,7 @@ const links = [
   {
     id: 2,
     item: "What we offer",
-    link: "#what_we_offer",
+    link: "#offers",
   },
   {
     id: 3,
@@ -17,7 +17,7 @@ const links = [
   {
     id: 4,
     item: "How can you help",
-    link: "#careers",
+    link: "#contact",
   },
 ];
 

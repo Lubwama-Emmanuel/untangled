@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import { useState } from "react";
 import MobileMenu from "../components/MobileMenu";
+import BottonLine from "./BottonLine";
+import Footer from "../components/Footer";
 
 export default function AppLayout() {
   const [clicked, setClicked] = useState(false);
@@ -15,7 +17,8 @@ export default function AppLayout() {
         <Outlet />
       </main>
 
-      <Header />
+      <BottonLine />
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,8 @@
-import AppSection from "../ui/AppSection";
 import Separator from "../ui/Separator";
 
 export default function Hero() {
   return (
-    <AppSection>
+    <section className="m-auto max-w-[90%]">
       <div className="relative ">
         <div className="absolute">
           <img
@@ -61,6 +60,6 @@ export default function Hero() {
         <img src="images/vector-top.png" alt="separator" className="" />
       </div>
       <Separator />
-    </AppSection>
+    </section>
   );
 }

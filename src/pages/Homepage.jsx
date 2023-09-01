@@ -1,6 +1,5 @@
 import About from "../components/About";
 import Contact from "../components/Contact";
-import Help from "../components/Help";
 import Hero from "../components/Hero";
 import Offer from "../components/Offer";
 
@@ -10,7 +9,6 @@ export default function Homepage() {
       <Hero />
       <Offer />
       <About />
-      <Help />
       <Contact />
     </div>
   );
