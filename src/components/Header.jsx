@@ -18,17 +18,17 @@ export default function Header({ clicked, setClicked }) {
 
       {clicked ? (
         <div onClick={() => setClicked((value) => !value)}>
-          <h2 className="text-5xl uppercase text-red-700">x</h2>
+          <h2 className="text-5xl uppercase text-stone-700">x</h2>
         </div>
       ) : (
         <div
           className="sm:hidden"
           onClick={() => setClicked((value) => !value)}
         >
-          <div className="mb-1 h-1 w-8 bg-red-700"></div>
-          <div className="mb-1 h-1 w-8 bg-red-700"></div>
-          <div className="mb-1 h-1 w-8 bg-red-700"></div>
-          <div className="h-1 w-8 bg-red-700"></div>
+          <div className="mb-1 h-1 w-8 bg-stone-700"></div>
+          <div className="mb-1 h-1 w-8 bg-stone-700"></div>
+          <div className="mb-1 h-1 w-8 bg-stone-700"></div>
+          <div className="h-1 w-8 bg-stone-700"></div>
         </div>
       )}
     </header>

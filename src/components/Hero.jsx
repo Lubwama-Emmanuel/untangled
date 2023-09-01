@@ -8,12 +8,12 @@ export default function Hero() {
           <img
             src="images/vector-2.png"
             alt="vector"
-            className="h-[550px] sm:h-auto"
+            className="h-[580px] sm:h-auto"
           />
         </div>
-        <div className="sm:grid sm:grid-rows-[700px_1fr]">
-          <div className="mb-14 text-right sm:flex sm:h-[600px] sm:items-center sm:justify-center sm:text-left">
-            <h2 className=" text-5xl font-light leading-[1.9] sm:ml-32 sm:w-[50%] sm:text-7xl sm:leading-[1.2]">
+        <div className="grid sm:grid sm:grid-rows-[700px_1fr]">
+          <div className="mb-14 w-min justify-self-end text-right sm:flex sm:h-[600px] sm:w-auto sm:items-center sm:justify-center sm:text-left">
+            <h2 className="text-4xl font-light leading-[1.9] sm:ml-32 sm:w-[50%] sm:text-7xl sm:leading-[1.2]">
               Untangling the transition from{" "}
               <span className="font-medium">student</span> to{" "}
               <span className="font-medium text-red-600 underline">adult</span>

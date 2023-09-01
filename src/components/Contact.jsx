@@ -3,7 +3,7 @@ import Heading from "../ui/Heading";
 export default function Contact() {
   return (
     <section id="contact" className="m-auto max-w-[90%]">
-      <div className="mx-auto mb-10 space-y-8 sm:max-w-[90%]">
+      <div className="mx-auto space-y-8 sm:mb-10 sm:max-w-[90%]">
         <Heading number={4} title={"How you can help?"} />
         <div className="grid gap-[2%] sm:grid-cols-2">
           <div>
@@ -23,7 +23,7 @@ export default function Contact() {
               <div className="flex items-center space-x-2">
                 <input
                   type="checkbox"
-                  className="h-4 w-4 transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2"
+                  className="transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2 sm:h-4 sm:w-4"
                 />
                 <label>
                   get on a zoom call with 8-10 peers and design something cool
@@ -32,7 +32,7 @@ export default function Contact() {
               <div className="flex items-center space-x-2">
                 <input
                   type="checkbox"
-                  className="h-4 w-4 transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2"
+                  className="transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2 sm:h-4 sm:w-4"
                 />
                 <label>
                   join in with 20+ other young adults for an in-person workshop
@@ -41,7 +41,7 @@ export default function Contact() {
               <div className="flex items-center space-x-2">
                 <input
                   type="checkbox"
-                  className="h-4 w-4 transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2"
+                  className="transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2 sm:h-4 sm:w-4"
                 />
                 <label>reach out and tell me more</label>
               </div>
