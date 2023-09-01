@@ -6,7 +6,7 @@ export default function Offer() {
   return (
     <AppSection>
       <div className="grid grid-cols-[7fr_1fr]" id="#what_we_offer">
-        <div className="mx-auto max-w-[80%] ">
+        <div className="mx-auto max-w-[100%] sm:max-w-[80%]">
           <Heading number={2} title={"What we offer?"} />
           <div className="space-y-2 text-center text-xl">
             <p>
@@ -15,7 +15,7 @@ export default function Offer() {
             </p>
             <p>What if you could help your peers get this right?</p>
           </div>
-          <div className="my-10 grid grid-cols-2 gap-10 ">
+          <div className="my-10 grid gap-10 sm:grid-cols-2 ">
             <Offers
               title={"The opportunity is here"}
               desc={
@@ -39,7 +39,11 @@ export default function Offer() {
           </div>
         </div>
         <div>
-          <img src="images/offer.png" alt="offer" className="h-[590px]" />
+          <img
+            src="images/offer.png"
+            alt="offer"
+            className="h-[1000px] sm:h-[590px]"
+          />
         </div>
       </div>
 
@@ -50,7 +54,7 @@ export default function Offer() {
 
 function Offers({ title, desc }) {
   return (
-    <div className="border-b-2 border-t-2 border-[#000] py-5">
+    <div className="border-b-2 border-[#000] py-5 sm:border-t-2">
       <h2 className="text-xl uppercase text-blue-800">{title}</h2>
       <p>{desc}</p>
     </div>
