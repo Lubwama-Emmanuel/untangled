@@ -88,7 +88,6 @@ export default function Mitch() {
         <h2 className="mb-20 text-center text-2xl text-blue-700">
           Man of Faith
         </h2>
-        <Separator isMarginBottom={false} />
       </div>
       <div className="sm:hidden">
         <h2 className=" my-7 text-center text-4xl font-semibold capitalize">
