@@ -5,7 +5,7 @@ import Separator from "../ui/Separator";
 export default function Hero() {
   return (
     <AppSection>
-      <div className="ml-[-40px] grid grid-cols-[1fr_4fr]">
+      <div className="grid grid-cols-[1fr_4fr]">
         <div className="">
           <img src="images/vector-2.png" alt="vector" className="" />
         </div>
