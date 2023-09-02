@@ -72,7 +72,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="w-26 rounded-full bg-blue-800 px-7 py-3 text-center text-2xl font-semibold text-stone-100 transition-all duration-200 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2">
+          <button className="w-26 rounded-full bg-blue-800 px-7 py-3 text-center text-2xl font-semibold text-stone-100 transition-all duration-200 hover:scale-105 focus:outline-none focus:ring focus:ring-blue-600 focus:ring-offset-2">
             Connect
           </button>
         </div>
