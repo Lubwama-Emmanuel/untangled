@@ -9,7 +9,7 @@ export default function Offer() {
           <Heading number={2} title={"What we offer?"} />
           <div className="space-y-2 text-center text-xl">
             <p>
-              What if people in their 20's designed "STUFF" they would actually
+              What if people in their 20 designed "STUFF" they would actually
               use to sort this out?
             </p>
             <p>What if you could help your peers get this right?</p>
