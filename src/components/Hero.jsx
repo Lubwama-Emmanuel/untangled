@@ -51,6 +51,10 @@ export default function Hero() {
                 className="h-[546px] text-center"
               /> */}
             </div>
+            <h2 className="text-center text-xl sm:mt-14 sm:text-2xl">
+              Everybody gets some of this right – but very few of us get all of
+              it sorted out in our 20s.
+            </h2>
           </div>
         </div>
       </div>

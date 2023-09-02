@@ -11,7 +11,7 @@ export default function Contact() {
             <h3 className="mb-5 text-xl font-bold sm:text-2xl">
               What works for you?
             </h3>
-            <form className=" space-y-2 px-5 font-medium">
+            <form className=" space-y-2 px-5 text-lg font-medium">
               <div className="flex items-center space-x-2">
                 <input
                   type="checkbox"

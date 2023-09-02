@@ -40,9 +40,11 @@ export default function Offer() {
                 />
               </div>
             </div>
-            <div className="text-center">
+            <div className="mt-10 text-center">
               <h3 className="text-3xl">No Cost</h3>
-              <p>You give us your time and ideas and we give you ours.</p>
+              <p className="text-2xl">
+                You give us your time and ideas and we give you ours.
+              </p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center sm:hidden">
@@ -61,7 +63,9 @@ export default function Offer() {
             </div>
             <div className="mt-7 text-center">
               <h3 className="text-2xl">No Cost</h3>
-              <p>You give us your time and ideas and we give you ours.</p>
+              <p className="">
+                You give us your time and ideas and we give you ours.
+              </p>
             </div>
           </div>
         </div>
@@ -73,7 +77,6 @@ export default function Offer() {
           />
         </div>
       </div>
-
       <Separator />
     </AppSection>
   );
@@ -81,8 +84,8 @@ export default function Offer() {
 
 function Offers({ desc }) {
   return (
-    <div className="w-[280px] border-b-2 border-[#000] py-3 sm:border-t-2">
-      <p>{desc}</p>
+    <div className="w-[300px] border-b-2 border-[#000] py-3 sm:border-t-2">
+      <p className="text-xl">{desc}</p>
     </div>
   );
 }

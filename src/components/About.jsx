@@ -31,7 +31,7 @@ export default function About() {
           </div>
         </div>
         <div className="mb-16 flex justify-center">
-          <h2 className="w-[90%] rounded-lg border duration-200 border-blue-800 py-3 text-center text-2xl font-bold text-blue-800 underline transition-all hover:scale-105 sm:w-[30%] sm:py-2">
+          <h2 className="w-[90%] rounded-lg border border-blue-800 py-3 text-center text-2xl font-bold text-blue-800 underline transition-all duration-200 hover:scale-105 sm:w-[30%] sm:py-2">
             <Link onClick={scrollToTop} to="/about_mitch">
               Learn more about Dr. Mitch
             </Link>
@@ -49,7 +49,7 @@ function Aspect({ aspect }) {
   return (
     <div className="flex items-center justify-between gap-2">
       <div className="hidden h-[2px] w-auto flex-grow bg-[#000] sm:block"></div>
-      <h3 className="capitalize">{aspect}</h3>
+      <h3 className="text-2xl capitalize">{aspect}</h3>
     </div>
   );
 }
