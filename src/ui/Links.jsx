@@ -2,12 +2,12 @@ const links = [
   {
     id: 1,
     item: "Get these right",
-    link: "#",
+    link: "#get_these",
   },
   {
     id: 2,
-    item: "What we offer",
-    link: "#offers",
+    item: "Opportunities",
+    link: "#opportunities",
   },
   {
     id: 3,
@@ -16,7 +16,7 @@ const links = [
   },
   {
     id: 4,
-    item: "How can you help",
+    item: "Connect",
     link: "#contact",
   },
 ];

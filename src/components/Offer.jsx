@@ -1,60 +1,87 @@
+import AppSection from "../ui/AppSection";
 import Heading from "../ui/Heading";
 import Separator from "../ui/Separator";
 
 export default function Offer() {
   return (
-    <section id="offers" className="m-auto max-w-[90%]">
-      <div className="grid grid-cols-[7fr_1fr]" id="#what_we_offer">
-        <div className="mx-auto max-w-[100%] sm:max-w-[90%]">
-          <Heading number={2} title={"What we offer?"} />
-          <div className="space-y-2 text-center text-xl">
-            <p>
-              What if people in their 20 designed "STUFF" they would actually
-              use to sort this out?
-            </p>
-            <p>What if you could help your peers get this right?</p>
+    <AppSection className="m-auto max-w-[90%]">
+      <div id="opportunities" className="grid grid-cols-[7fr_1fr]">
+        <div className="mx-auto max-w-[100%] space-y-10 sm:w-[90%]">
+          <Heading number={2} title={"Opportunities"} />
+          <div className="hidden sm:block">
+            <div className="flex flex-col items-center space-y-1">
+              <h2 className="text-5xl">Two Opportunities</h2>
+              <div className="flex w-[100%] justify-center gap-[20%]">
+                <svg
+                  viewBox="0 0 100 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-56"
+                >
+                  <line x1="0" y1="80" x2="100" y2="20" stroke="black" />
+                </svg>
+                <svg
+                  viewBox="0 0 100 100"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-56"
+                >
+                  <line x1="0" y1="20" x2="100" y2="80" stroke="black" />
+                </svg>
+              </div>
+              <div className="flex w-[100%] justify-between">
+                <Offers
+                  desc={
+                    "Take a survey, learn about yourself and debrief it with Dr. Mitch"
+                  }
+                />
+                <Offers
+                  desc={
+                    "Meet with peers to design something cool that will help millions"
+                  }
+                />
+              </div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-3xl">No Cost</h3>
+              <p>You give us your time and ideas and we give you ours.</p>
+            </div>
           </div>
-          <div className="my-10 grid gap-10 sm:grid-cols-2 ">
-            <Offers
-              title={"The opportunity is here"}
-              desc={
-                "to help create the products, tools and services that will help millionsof young adults make a successful transition to full adulthood"
-              }
-            />
-            <Offers
-              title={"AND ALONG THE WAY "}
-              desc={"you might just learn something important about yourself."}
-            />
-            <Offers
-              title={"IT’S ABSOLUTELY FREE"}
-              desc={"to be a part of this project. There is no cost for this"}
-            />
-            <Offers
-              title={"BALANCE OF EXCHANGE"}
-              desc={
-                "is the key word for what will happen. You give us your time and ideas – we give you ours."
-              }
-            />
+          <div className="flex flex-col items-center justify-center sm:hidden">
+            <h3 className="mb-5 text-3xl">Two Opportunities</h3>
+            <div className="space-y-10">
+              <Offers
+                desc={
+                  "Take a survey, learn about yourself and debrief it with Dr. Mitch"
+                }
+              />
+              <Offers
+                desc={
+                  "Meet with peers to design something cool that will help millions"
+                }
+              />
+            </div>
+            <div className="mt-7 text-center">
+              <h3 className="text-2xl">No Cost</h3>
+              <p>You give us your time and ideas and we give you ours.</p>
+            </div>
           </div>
         </div>
         <div>
           <img
             src="images/offer.png"
             alt="offer"
-            className="h-[1000px] sm:h-[590px]"
+            className="h-[450px] sm:h-[590px]"
           />
         </div>
       </div>
 
       <Separator />
-    </section>
+    </AppSection>
   );
 }
 
-function Offers({ title, desc }) {
+function Offers({ desc }) {
   return (
-    <div className="border-b-2 border-[#000] py-5 sm:border-t-2">
-      <h2 className="text-xl uppercase text-blue-800">{title}</h2>
+    <div className="w-[280px] border-b-2 border-[#000] py-3 sm:border-t-2">
       <p>{desc}</p>
     </div>
   );

@@ -5,7 +5,7 @@ import Offer from "../components/Offer";
 
 export default function Homepage() {
   return (
-    <div className="mx-auto max-w-screen-2xl">
+    <div>
       <Hero />
       <Offer />
       <About />

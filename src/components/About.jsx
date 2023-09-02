@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Heading from "../ui/Heading";
+import AppSection from "../ui/AppSection";
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
@@ -7,8 +8,8 @@ const scrollToTop = () => {
 
 export default function About() {
   return (
-    <section id="about" className="m-auto max-w-[90%]">
-      <div className="mx-auto max-w-[100%] sm:max-w-[90%]">
+    <AppSection>
+      <div id="about" className="mx-auto max-w-[100%] sm:max-w-[90%]">
         <div className="my-8 sm:hidden">
           <img src="images/vector-top.png" alt="separator" className="" />
         </div>
@@ -30,18 +31,17 @@ export default function About() {
           </div>
         </div>
         <div className="mb-16 flex justify-center">
-          <button
-            onClick={scrollToTop}
-            className="w-[70%] rounded-lg border border-blue-800 py-2 text-center text-blue-800 underline sm:w-[30%]"
-          >
-            <Link to="/about_mitch">Learn more about Dr. Mitch</Link>
-          </button>
+          <h2 className="w-[90%] rounded-lg border border-blue-800 py-3 text-center text-2xl font-bold text-blue-800 underline sm:w-[30%] sm:py-2">
+            <Link onClick={scrollToTop} to="/about_mitch">
+              Learn more about Dr. Mitch
+            </Link>
+          </h2>
         </div>
       </div>
       <div className="my-8 sm:hidden">
         <img src="images/vector-top.png" alt="separator" className="" />
       </div>
-    </section>
+    </AppSection>
   );
 }
 

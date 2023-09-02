@@ -9,7 +9,7 @@ export default function AppLayout() {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div>
+    <div className="mx-auto max-w-screen-2xl">
       <Header clicked={clicked} setClicked={setClicked} />
       {clicked && <MobileMenu />}
 
