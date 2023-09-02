@@ -13,7 +13,7 @@ export default function Header({ clicked, setClicked }) {
       <div>
         <Links
           styles={
-            "hidden text-lg list-none text-red-600 justify-between md:flex"
+            "hidden text-lg list-none text-red-600 justify-between md:flex sm:flex"
           }
         />
       </div>
@@ -24,7 +24,7 @@ export default function Header({ clicked, setClicked }) {
         </div>
       ) : (
         <div
-          className="sm:hidden"
+          className="sm:hidden md:hidden"
           onClick={() => setClicked((value) => !value)}
         >
           <div className="mb-1 h-1 w-8 bg-stone-700"></div>
