@@ -1,39 +1,9 @@
-import { useRef } from "react";
-
 import Separator from "../ui/Separator";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 
 export default function Mitch() {
-  const pdfRef = useRef();
-
-  const downloadPDF = () => {
-    const input = pdfRef.current;
-    html2canvas(input).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF("p", "mm", "a4", true);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = pdf.internal.pageSize.getHeight();
-      const imgWidth = canvas.width;
-      const imgHeight = canvas.height;
-      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
-      const imgX = (pdfWidth - imgWidth * ratio) * 2;
-      const imgY = 30;
-      pdf.addImage(
-        imgData,
-        "PNG",
-        imgX,
-        imgY,
-        imgWidth * ratio,
-        imgHeight * ratio,
-      );
-      pdf.save("about_Dr_Mitch.pdf");
-    });
-  };
-
   return (
     <section className="mx-auto max-w-screen-2xl">
-      <div className="hidden sm:block" ref={pdfRef}>
+      <div className="hidden sm:block">
         <h2 className="my-7 text-center text-5xl font-semibold capitalize">
           about dr. mitch
         </h2>
@@ -119,7 +89,7 @@ export default function Mitch() {
           Man of Faith
         </h2>
       </div>
-      <div className="sm:hidden" ref={pdfRef}>
+      <div className="sm:hidden">
         <h2 className=" my-7 text-center text-4xl font-semibold capitalize">
           about dr. mitch
         </h2>

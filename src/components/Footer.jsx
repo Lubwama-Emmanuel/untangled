@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import Links from "../ui/Links";
 
+const scrollToTop = () => {
+  window.scrollTo(0, 0);
+};
+
 export default function Footer() {
   return (
     <header className="m-auto flex max-w-[90%] items-center justify-between py-5 sm:grid sm:grid-cols-[1fr_4fr] sm:gap-[20%]">
@@ -14,11 +18,13 @@ export default function Footer() {
         <Links
           styles={"hidden list-none text-red-600 justify-between sm:flex"}
         />
-        <img
-          src="SVG/chevron-up.svg"
-          alt="logo"
-          className="h-14 w-14 sm:hidden"
-        />
+        <button onClick={scrollToTop}>
+          <img
+            src="SVG/chevron-up.svg"
+            alt="logo"
+            className="h-14 w-14 sm:hidden"
+          />
+        </button>
       </div>
     </header>
   );
