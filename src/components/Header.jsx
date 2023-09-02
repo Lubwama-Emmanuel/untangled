@@ -3,7 +3,7 @@ import Links from "../ui/Links";
 
 export default function Header({ clicked, setClicked }) {
   return (
-    <header className="m-auto flex max-w-[98%] items-center justify-between py-5 sm:grid sm:max-w-[95%] sm:grid-cols-[1fr_4fr] sm:gap-[20%]">
+    <header className="m-auto flex max-w-[98%] items-center justify-between py-5 sm:grid sm:max-w-[95%] sm:grid-cols-[1fr_4fr] sm:gap-[30%]">
       <Link to="/">
         <div className="flex items-center">
           <img src="images/vector.svg" alt="logo" />
