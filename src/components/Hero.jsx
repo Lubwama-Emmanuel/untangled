@@ -22,7 +22,7 @@ export default function Hero() {
           <div className="mx-auto max-w-[100%] sm:w-[83%]">
             <h2 className="mb-10 ml-12 text-3xl">
               <span className="mr-4 text-5xl text-blue-700 underline">01.</span>{" "}
-              Get these things right in your 20's and lifes goes well.
+              Get these things right in your 20s and lifes goes well.
             </h2>
 
             <div
