@@ -1,4 +1,8 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+
 import AppSection from "../ui/AppSection";
 import Heading from "../ui/Heading";
 
@@ -27,7 +31,7 @@ const data = [
 
 const response = {};
 let clickedValues = [];
-let checkedValues = [];
+let checkedValue = [];
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -36,7 +40,9 @@ export default function Contact() {
 
   const [checking, setChecking] = useState();
 
-  function handleSubmit(e) {
+  let notify;
+
+  async function handleSubmit(e) {
     e.preventDefault();
 
     response.name = name;
@@ -44,14 +50,50 @@ export default function Contact() {
     response.phone = phone;
 
     for (let item of clickedValues) {
-      checkedValues.push(item.item);
+      checkedValue.push(item.item);
     }
 
-    console.log(checkedValues);
+    response.checkedValue = checkedValue;
 
-    console.log(response);
+    if (
+      !response.checkedValue ||
+      !response.name ||
+      !response.email ||
+      !response.phone
+    ) {
+      notify = () => toast.error("Some fields are missing");
+      notify();
+      return;
+    }
+
+    try {
+      const res = await axios.post(
+        "http://127.0.0.1:3003/api/emailSender/contact/connect",
+        response,
+      );
+
+      // IF ALL IS WELL
+      if (res.statusText === "OK") {
+        notify = () => toast.success("Sent Successfully");
+        notify();
+        setTimeout(function () {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }, 3000);
+      }
+
+      console.log(res.data);
+    } catch (error) {
+      notify = () => toast.error("Check your internet");
+      notify();
+    }
 
     setChecking(false);
+    setName("");
+    setEmail("");
+    setPhone("");
   }
   return (
     <AppSection className="m-auto max-w-[90%]">
@@ -114,6 +156,7 @@ export default function Contact() {
           </button>
         </div>
       </div>
+      <ToastContainer />
     </AppSection>
   );
 }
