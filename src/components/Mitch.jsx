@@ -1,5 +1,3 @@
-import Separator from "../ui/Separator";
-
 export default function Mitch() {
   return (
     <section className="mx-auto max-w-screen-2xl">
@@ -7,8 +5,8 @@ export default function Mitch() {
         <h2 className="my-7 text-center text-5xl font-semibold capitalize">
           about dr. mitch
         </h2>
-        <div className="grid-rows-[auto_auto_auto m-auto grid w-[90%] space-y-5">
-          <div className="mx-auto grid max-w-[60%] grid-cols-[auto_auto] items-start gap-10 px-3 py-5">
+        <div className="grid-rows-[auto_auto_auto m-auto grid w-[100%] space-y-5 lg:w-[90%]">
+          <div className="mx-auto grid w-[95%] grid-cols-[auto_auto] items-start gap-10 px-3 py-5 lg:max-w-[60%]">
             <div>
               <p className="w-[300px]">
                 <span className=" text-2xl text-blue-700">Entrepreneur:</span>{" "}
@@ -26,7 +24,7 @@ export default function Mitch() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-[30%_40%_30%] items-start">
+          <div className="grid items-start lg:grid-cols-[30%_40%_30%]">
             <div className="px-10 py-8">
               <p>
                 <span className="text-2xl text-blue-700">
@@ -61,7 +59,7 @@ export default function Mitch() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-[60%] grid-cols-[auto_auto] items-start gap-10 px-3 py-5">
+          <div className="mx-auto grid w-[95%] grid-cols-[auto_auto] items-start gap-10 px-3 py-5 lg:max-w-[60%]">
             <div className="">
               <p>
                 <span className="text-2xl text-blue-700">Education:</span>{" "}
@@ -163,8 +161,6 @@ export default function Mitch() {
         <h2 className="my-5 text-center text-2xl text-blue-700">
           Man of Faith
         </h2>
-
-        <Separator isMarginBottom={false} />
       </div>
     </section>
   );
