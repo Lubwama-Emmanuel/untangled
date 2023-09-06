@@ -83,8 +83,6 @@ export default function Contact() {
           });
         }, 3000);
       }
-
-      console.log(res.data);
     } catch (error) {
       notify = () => toast.error("Check your internet");
       notify();
