@@ -68,7 +68,7 @@ export default function Contact() {
 
     try {
       const res = await axios.post(
-        "http://127.0.0.1:3003/api/emailSender/contact/connect",
+        "https://api.ashcreekadvisors.com/api/EmailSender/contact/newContact",
         response,
       );
 
