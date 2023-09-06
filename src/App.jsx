@@ -2,7 +2,6 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import AppLayout from "./ui/AppLayout";
 import AboutMitch from "./pages/AboutMitch";
-import DownloadPDF from "./pages/DownloadPDF";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -18,10 +17,6 @@ export default function App() {
           element: <AboutMitch />,
         },
       ],
-    },
-    {
-      path: "/leaflet",
-      element: <DownloadPDF />,
     },
   ]);
 
