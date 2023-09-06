@@ -7,7 +7,7 @@ const scrollToTop = () => {
 
 export default function Footer() {
   return (
-    <header className="m-auto flex max-w-[95%] items-center justify-between py-5 text-lg sm:grid sm:grid-cols-[1fr_4fr] sm:gap-[20%]">
+    <header className="m-auto flex max-w-[95%] items-center justify-between py-5 text-lg sm:grid sm:grid-cols-[1fr_4fr] sm:gap-[20%] md:max-w-[98%]">
       <Link to="/">
         <div className="flex items-center">
           <img src="images/vector.svg" alt="logo" />

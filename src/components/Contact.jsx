@@ -97,7 +97,10 @@ export default function Contact() {
   }
   return (
     <AppSection className="m-auto max-w-[90%]">
-      <div id="contact" className="mx-auto space-y-8 sm:mb-10 sm:max-w-[90%]">
+      <div
+        id="contact"
+        className="mx-auto space-y-8 sm:mb-10 md:max-w-[98%] lg:max-w-[90%]"
+      >
         <Heading number={4} title={"Connect"} />
         <div className="grid gap-[2%] sm:grid-cols-2">
           <div>

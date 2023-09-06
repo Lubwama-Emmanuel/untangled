@@ -3,7 +3,7 @@ import Links from "../ui/Links";
 
 export default function Header({ clicked, setClicked }) {
   return (
-    <header className="m-auto flex max-w-[98%] items-center justify-between py-5 sm:grid sm:max-w-[95%] sm:grid-cols-[1fr_4fr] md:gap-1 lg:gap-[30%]">
+    <header className="m-auto flex max-w-[98%] grid-cols-[1fr_2fr] items-center justify-between py-5 sm:grid md:gap-1 md:bg-yellow-700 lg:max-w-[95%] lg:grid-cols-[1fr_4fr] lg:gap-[30%] lg:bg-green-700">
       <Link to="/">
         <div className="flex items-center">
           <img src="images/vector.svg" alt="logo" />
@@ -13,7 +13,7 @@ export default function Header({ clicked, setClicked }) {
       <div>
         <Links
           styles={
-            "hidden text-lg list-none text-red-600 justify-between md:flex sm:flex"
+            "hidden text-lg list-none text-red-600 justify-around lg:justify-between md:flex sm:flex"
           }
         />
       </div>

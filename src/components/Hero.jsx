@@ -58,9 +58,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="my-8 sm:hidden">
-        <img src="images/vector-top.png" alt="separator" className="" />
-      </div>
       <Separator />
     </AppSection>
   );

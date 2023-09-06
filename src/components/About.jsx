@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Heading from "../ui/Heading";
 import AppSection from "../ui/AppSection";
+import Separator from "../ui/Separator";
 
 const scrollToTop = () => {
   window.scrollTo(0, 0);
@@ -9,10 +10,10 @@ const scrollToTop = () => {
 export default function About() {
   return (
     <AppSection>
-      <div id="about" className="mx-auto max-w-[100%] sm:max-w-[90%]">
-        <div className="my-8 sm:hidden">
-          <img src="images/vector-top.png" alt="separator" className="" />
-        </div>
+      <div
+        id="about"
+        className="mx-auto max-w-[100%] md:max-w-[98%] lg:max-w-[90%]"
+      >
         <Heading number={3} title={"About Dr.Mitch"} />
         <div className="mb-10 grid grid-cols-2 items-center">
           <div className="flex flex-col items-center space-y-10 px-2 sm:block sm:space-y-16">
@@ -38,9 +39,7 @@ export default function About() {
           </h2>
         </div>
       </div>
-      <div className="my-8 sm:hidden">
-        <img src="images/vector-top.png" alt="separator" className="" />
-      </div>
+      <Separator />
     </AppSection>
   );
 }
