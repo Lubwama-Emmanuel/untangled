@@ -7,6 +7,7 @@ const scrollToTop = () => {
   window.scrollTo(0, 0);
 };
 
+// about Mitch section
 export default function About() {
   return (
     <AppSection>
