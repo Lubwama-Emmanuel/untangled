@@ -6,6 +6,7 @@ import axios from "axios";
 import AppSection from "../ui/AppSection";
 import Heading from "../ui/Heading";
 
+// connect data
 const data = [
   {
     id: 1,
