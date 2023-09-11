@@ -22,7 +22,6 @@ export default function About() {
             <Aspect aspect={"Psychologist"} />
             <Aspect aspect={"social scientist"} />
             <Aspect aspect={"serial entrepreneur"} />
-            {/* <Aspect aspect={"management consultant"} /> */}
           </div>
           <div className="flex justify-center">
             <img
