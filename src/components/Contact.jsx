@@ -163,19 +163,14 @@ export default function Contact() {
   );
 }
 
-const Checkbox = ({ el, checking, setChecking }) => {
-  // const [isChecked, setIsChecked] = useState();
-
+const Checkbox = ({ el, checking }) => {
   function getCheckedValue(e) {
     if (e.target.checked) {
-      // setIsChecked((checked) => !checked);
       el.checked = true;
     } else {
-      // setIsChecked((checked) => !checked);
       el.checked = false;
     }
     clickedValues = data.filter((item) => item.checked);
-    // console.log(filteredData);
   }
 
   return (
